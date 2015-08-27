@@ -2,4 +2,22 @@
 <resources>
     <string name="action_settings">setting</string>
     <string name="app_name">android_stu</string>
+
+    <string-array name="cat_names">
+        <item>Carfield</item>
+        <item>Nykio</item>
+        <item>Sensi</item>
+        <item>CC</item>
+        <item>Chi</item>
+        <item>Carlos</item>
+        <item>Herdo</item>
+        <item>Schuster</item>
+        <item>Simon</item>
+        <item>Frans</item>
+        <item>Karlos</item>
+        <item>Merdo</item>
+        <item>Sczar</item>
+        <item>Sicon</item>
+        <item>Frlon</item>
+    </string-array>
 </resources>

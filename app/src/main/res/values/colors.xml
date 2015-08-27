@@ -7,4 +7,14 @@
     <color name="colorPrimary">#303030</color>
     <color name="colorPrimaryDark">#303030</color>
     <color name="colorAccent">#8661C1</color>
+
+    <color name="orange">#FF9900</color>
+    <color name="green">#009900</color>
+    <color name="blue">#000099</color>
+    <color name="purple">#917DEB</color>
+    <color name="pink">#EBB4E6</color>
+    <color name="light_green">#8EEE9D</color>
+    <color name="yel">#EEE68E</color>
+    <color name="cyan">#8EEEE3</color>
+
 </resources>

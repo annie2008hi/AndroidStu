@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+    <TextView
+        android:id="@+id/reg_exp_toast"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="RegExpActivity"/>
+
+    <EditText
+        android:id="@+id/reg_exp_licenumber"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="input license"/>
+
+    <EditText
+        android:id="@+id/reg_exp_telphone"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="input phone"/>
+
+    <EditText
+        android:id="@+id/reg_exp_numlength"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="input number"/>
+
+    <Button
+        android:id="@+id/judge"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="judge"/>
+</LinearLayout>

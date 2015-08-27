@@ -28,4 +28,30 @@
         android:gravity="center"
         android:textSize="25dp"
         android:text="startActivity A" />
+
+    <Button
+        android:id="@+id/start_swipe"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:gravity="center"
+        android:textSize="25dp"
+        android:text="startSipe" />
+
+    <Button
+        android:id="@+id/start_image_loader"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:gravity="center"
+        android:textSize="25dp"
+        android:text="startLoadImage" />
+
+    <Button
+        android:id="@+id/start_reg_exp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:textSize="25dp"
+        android:text="startRegExp"/>
 </LinearLayout>
