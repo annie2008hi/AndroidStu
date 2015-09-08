@@ -3,33 +3,46 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:orientation="vertical">
+
     <TextView
         android:id="@+id/reg_exp_toast"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:text="RegExpActivity"/>
+        android:text="RegExpActivity" />
 
-    <EditText
-        android:id="@+id/reg_exp_licenumber"
+    <LinearLayout
         android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:hint="input license"/>
+        android:layout_height="wrap_content">
+
+        <EditText
+            android:id="@+id/reg_exp_licenumber"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:hint="input license" />
+
+        <ImageView
+            android:id="@+id/cancel_img"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dip"
+            android:src="@drawable/ic_search_clear" />
+    </LinearLayout>
 
     <EditText
         android:id="@+id/reg_exp_telphone"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:hint="input phone"/>
+        android:hint="input phone" />
 
     <EditText
         android:id="@+id/reg_exp_numlength"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:hint="input number"/>
+        android:hint="input number" />
 
     <Button
         android:id="@+id/judge"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:text="judge"/>
+        android:text="judge" />
 </LinearLayout>

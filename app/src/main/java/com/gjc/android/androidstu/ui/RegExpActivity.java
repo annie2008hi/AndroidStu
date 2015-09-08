@@ -6,6 +6,7 @@ import android.text.TextUtils;
 import android.view.View;
 import android.widget.Button;
 import android.widget.EditText;
+import android.widget.ImageView;
 import android.widget.TextView;
 
 import com.gjc.android.androidstu.MyApplication;
@@ -22,6 +23,7 @@ public class RegExpActivity extends Activity {
     private Button mJud;
     private TextView mTos;
     private MyApplication app;
+    private ImageView mClearImg;
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -43,6 +45,13 @@ public class RegExpActivity extends Activity {
         mTos = (TextView) findViewById(R.id.reg_exp_toast);
         app = (MyApplication)this.getApplication();
         mTos.setText("default:"+app.getGlobalString());
+        mClearImg = (ImageView) findViewById(R.id.cancel_img);
+        mClearImg.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                mLicense.getText().clear();
+            }
+        });
     }
     private boolean isLicenseNumber(){
         String licStr = mLicense.getText().toString();

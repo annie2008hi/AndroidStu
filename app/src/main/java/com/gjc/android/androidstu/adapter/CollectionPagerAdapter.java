@@ -4,9 +4,9 @@ import android.support.v4.app.Fragment;
 import android.support.v4.app.FragmentManager;
 import android.support.v4.app.FragmentPagerAdapter;
 
-import com.gjc.android.androidstu.fragment.CenterFragment;
-import com.gjc.android.androidstu.fragment.HomeFragment;
-import com.gjc.android.androidstu.fragment.UserFragment;
+import com.gjc.android.androidstu.ui.fragment.CenterFragment;
+import com.gjc.android.androidstu.ui.fragment.HomeFragment;
+import com.gjc.android.androidstu.ui.fragment.UserFragment;
 import com.gjc.android.androidstu.utils.StringUtils;
 
 /**

@@ -16,5 +16,7 @@
     <color name="light_green">#8EEE9D</color>
     <color name="yel">#EEE68E</color>
     <color name="cyan">#8EEEE3</color>
+    <color name="sky_blue">#6ffffc</color>
+    <color name="gray">#838383</color>
 
 </resources>
