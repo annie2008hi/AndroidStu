@@ -2,7 +2,7 @@
 <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="#ad98ff"
+    android:background="#a3a3a3"
     android:orientation="vertical">
 
     <ScrollView
@@ -31,12 +31,12 @@
                 android:textSize="25dp" />
 
             <Button
-                android:id="@+id/start_activity_a"
+                android:id="@+id/start_activity_async"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:layout_gravity="center"
                 android:gravity="center"
-                android:text="startActivity A"
+                android:text="startAsyncHttp"
                 android:textSize="25dp" />
 
             <Button
@@ -95,6 +95,54 @@
                 android:layout_height="wrap_content"
                 android:gravity="center"
                 android:text="START progress_bar"
+                android:textSize="25sp" />
+
+            <Button
+                android:id="@+id/start_shape"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:text="START shape"
+                android:textSize="25sp" />
+
+            <Button
+                android:id="@+id/start_touchevent"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:text="START Touch_Event"
+                android:textSize="25sp" />
+
+            <Button
+                android:id="@+id/start_todo"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:text="START Todo"
+                android:textSize="25sp" />
+
+            <Button
+                android:id="@+id/start_hud"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:text="START hud"
+                android:textSize="25sp" />
+
+            <Button
+                android:id="@+id/start_tween_anmi"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:text="START tween_anmi"
+                android:textSize="25sp" />
+
+            <Button
+                android:id="@+id/start_ui_element"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:text="START ui_element"
                 android:textSize="25sp" />
         </LinearLayout>
     </ScrollView>

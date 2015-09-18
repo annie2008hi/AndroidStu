@@ -6,6 +6,7 @@ import android.text.Spannable;
 import android.text.SpannableString;
 import android.text.Spanned;
 import android.text.TextUtils;
+import android.text.method.ScrollingMovementMethod;
 import android.text.style.AbsoluteSizeSpan;
 import android.view.View;
 import android.widget.Button;
@@ -88,6 +89,7 @@ public class DecimalFormatActivity extends Activity {
                 mGetInt.setText(saveRoundDemical(Double.parseDouble(mInputDouble.getText().toString())));
             }
         });
+
     }
 
     private String saveRoundDemical(double prevNum) {

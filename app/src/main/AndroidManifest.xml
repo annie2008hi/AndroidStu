@@ -38,6 +38,12 @@
         <activity android:name=".ui.HomeAct.DecimalFormatActivity"/>
         <activity android:name=".ui.HomeAct.WebViewActivity"/>
         <activity android:name=".ui.HomeAct.ProgressBarActivity"/>
+        <activity android:name=".ui.HomeAct.ShapeActivity"/>
+        <activity android:name=".ui.HomeAct.TouchEventActivity"/>
+        <activity android:name=".ui.HomeAct.ToDoActivity"/>
+        <activity android:name=".ui.HomeAct.ProgressHUDDemo"/>
+        <activity android:name=".ui.HomeAct.TweenAnmiActivity"/>
+        <activity android:name=".ui.HomeAct.UIElementActivity"/>
     </application>
 
 </manifest>

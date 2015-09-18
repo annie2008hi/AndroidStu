@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<clip xmlns:android="http://schemas.android.com/apk/res/android"
+    android:drawable="@color/pink"
+    android:clipOrientation="horizontal"
+    android:gravity="left">
+    <!--
+    <clip>element use following three attribute to control how to clip images
+    android:drawable: 指定要剪切的原图像
+    android:clipOrientation = ["horizontal" | "vertical"]: 截取的方向，
+    android:gravity=["rihgt" | "left"...] 表示如何截取图像
+    -->
+
+</clip>

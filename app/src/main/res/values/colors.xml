@@ -18,5 +18,6 @@
     <color name="cyan">#8EEEE3</color>
     <color name="sky_blue">#6ffffc</color>
     <color name="gray">#838383</color>
+    <color name="transparent">#00000000</color>
 
 </resources>

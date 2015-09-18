@@ -3,6 +3,8 @@ package com.gjc.android.androidstu.ui.HomeAct;
 import android.app.Activity;
 import android.os.Bundle;
 import android.os.Handler;
+import android.view.View;
+import android.webkit.WebChromeClient;
 import android.webkit.WebView;
 import android.webkit.WebViewClient;
 import android.widget.ProgressBar;
@@ -35,23 +37,37 @@ public class WebViewActivity extends Activity {
         //if want to show in app, not show in browser of system
         mWebVIew.requestFocus();
         mWebVIew.loadUrl("http://www.baidu.com");
+        mProgress = (ProgressBar) findViewById(R.id.progress_bar);
+
         mWebVIew.setWebViewClient(new WebViewClient() {
+            @Override
+            public void onPageFinished(WebView view, String url) {
+                super.onPageFinished(view, url);
+                mProgress.setVisibility(View.GONE);
+            }
         });
 
-        mProgress = (ProgressBar) findViewById(R.id.progress_bar);
-        new Thread(new Runnable() {
+
+        mWebVIew.setWebChromeClient(new WebChromeClient(){
             @Override
-            public void run() {
-                while (mProgressStatus <100) {
-                    mProgressStatus +=10 ;
-                    mHandler.post(new Runnable() {
-                        @Override
-                        public void run() {
-                            mProgress.setProgress(mProgressStatus);
-                        }
-                    });
-                }
+            public void onProgressChanged(WebView view, int newProgress) {
+//                super.onProgressChanged(view, newProgress);
+                mProgress.setProgress(PROGRESS);
             }
-        }).start();
+        });
+//        new Thread(new Runnable() {
+//            @Override
+//            public void run() {
+//                while (mProgressStatus <100) {
+//                    mProgressStatus +=10 ;
+//                    mHandler.post(new Runnable() {
+//                        @Override
+//                        public void run() {
+//                            mProgress.setProgress(mProgressStatus);
+//                        }
+//                    });
+//                }
+//            }
+//        }).start();
     }
 }

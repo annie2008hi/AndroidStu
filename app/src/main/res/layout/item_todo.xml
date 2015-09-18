@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="#F9CDAD"
+    android:orientation="horizontal"
+    android:padding="6dp">
+
+    <ImageView
+        android:id="@+id/todo_img_left"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_weight="1"
+        android:src="@drawable/ic_todo_red" />
+
+    <LinearLayout
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_weight="3"
+        android:orientation="vertical">
+
+        <EditText
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="#FC9D9A"
+            android:padding="6dp"
+            android:text="title"
+            android:textSize="25dp" />
+
+        <EditText
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="6dp"
+            android:background="#C8C8A9"
+            android:padding="6dp"
+            android:text="1f54w6e41f65e1f1ef41dfe"
+            android:textSize="18dp" />
+
+        <Button
+            android:id="@+id/alert_dialog"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="AlertDialog" />
+    </LinearLayout>
+
+</LinearLayout>

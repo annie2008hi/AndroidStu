@@ -2,7 +2,7 @@
 <resources>
     <string name="action_settings">setting</string>
     <string name="app_name">cccccc</string>
-
+    <string name="simple_indeterminate">Simple Indeterminate</string>
     <string-array name="cat_names">
         <item>Carfield</item>
         <item>Nykio</item>

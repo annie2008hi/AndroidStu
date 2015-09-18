@@ -4,6 +4,8 @@ import android.app.Activity;
 import android.os.Bundle;
 import android.os.Handler;
 import android.support.v4.widget.SwipeRefreshLayout;
+import android.view.LayoutInflater;
+import android.view.View;
 import android.widget.Adapter;
 import android.widget.ArrayAdapter;
 import android.widget.ListAdapter;
@@ -36,6 +38,14 @@ public class SwipeActivity extends Activity {
         mAdapter = new ArrayAdapter<String>(this,android.R.layout.simple_list_item_1
                 ,catArray);
         mListView.setAdapter((ListAdapter) mAdapter);
+        View view = LayoutInflater.from(SwipeActivity.this).inflate(R.layout.header_view_swipe,null);
+        mListView.addHeaderView(view);
+        mListView.setHeaderDividersEnabled(true);
+        //Enables or disables the drawing of the divider for header views？
+        view = LayoutInflater.from(SwipeActivity.this).inflate(R.layout.footview_swipe,null);
+        mListView.addFooterView(view);
+        mListView.setFooterDividersEnabled(true);
+        //Enables or disables the drawing of the divider for footer views?
         //customiza color of anmi
         //setColorSchemeColors not work
 //        mSwipeRefreshLayout.setColorSchemeColors(

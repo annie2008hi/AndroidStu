@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.gjc.android.androidstu.widget.TouchEventFather xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="400dp"
+    android:background="#ffffff"
+    android:orientation="vertical">
+
+    <com.gjc.android.androidstu.widget.TouchEventChild
+        android:layout_width="200dp"
+        android:layout_height="200dp"
+        android:layout_gravity="center"
+        android:background="#ffdefe"/>
+</com.gjc.android.androidstu.widget.TouchEventFather>
